@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Responsive webpage</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+	<div class="wrapper">
+		
+		<!-- sidebar -->
+		<nav id="sidebar">
+			<div class="sidebar-header">
+				<div class="hero-image">
+                    <div class="hero-text">
+                    	<div class="hero">
+                            <img src="https://images.pexels.com/photos/638700/pexels-photo-638700.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="avatar" alt="Jane Doe">
+                            <span class="profile">Jane Doe</span>
+                        </div>
+                    </div>
+                </div>
+			</div>
+			<ul class="list-unstyled components">
+				<li data-type="dashboard" class="dashboardmenu"><img src="images/ic-dashboard.svg">&nbsp; &nbsp;Dashboard</li>
+                <li data-type="accounts" class="dashboardmenu"><img src="images/ic-accounts.svg">&nbsp; &nbsp;Accounts</li>
+                <li data-type="cards" class="dashboardmenu"><img src="images/ic-cards.svg">&nbsp; &nbsp;Cards</li>
+                <li data-type="payments" class="dashboardmenu"><img src="images/ic-payments.svg">&nbsp; &nbsp;Payments</li>
+                <li data-type="transfers" class="dashboardmenu"><img src="images/ic-transfers.svg">&nbsp; &nbsp;Transfers</li>
+                <li data-type="airtime" class="dashboardmenu"><img src="images/ic-airtime.svg">&nbsp; &nbsp;Airtime</li>
+                <li data-type="settings" class="dashboardmenu"><img src="images/ic-settings.svg">&nbsp; &nbsp;Settings</li>
+            </ul>
+        </nav>
+
+        <!-- Page Content -->
+        <div style="flex-grow: 8" id="content">
+            <nav class="navbar navbar-expand-sm">
+                <div class="container-fluid">
+                    <i class="material-icons" id="togglesidebar" style="height: 30px; width: 30px;">sort</i>
+                </div>
+                <ul style="align-self: center" class="navbar-nav">
+                    <li class="nav-item">Dashboard</li>
+                </ul>
+            </nav>
+            <div class="slide"></div>
+            <div class="base"><p>Latest Transaction</p></div>
+            <ul class="list-unstyled">
+            	<li class="activitylog">
+            		<strong id="leftup">ATM Lagos</strong><span class="rightup green"><strong>- N450.00</strong></span>
+            		<br>
+            		<samp id="leftdown">Today</samp><span id="rightdown">Bank Withdraw</span>
+            	</li>
+            	<li class="skip">
+            		<strong id="leftup">ATM Lagos</strong><span class="rightup red"><strong>+ N450.00</strong></span>
+            		<br>
+            		<samp id="leftdown">Yesterday</samp><span id="rightdown">Bank Withdraw</span>
+            	</li>
+            	<li class="activitylog">
+            		<strong id="leftup">003 645 654865</strong><span class="rightup green"><strong>- 100 SP</strong></span>
+            		<br>
+            		<samp id="leftdown">13/08/2018</samp><span id="rightdown">Airtime Recharge</span>
+            	</li>
+            	<li class="skip">
+            		<strong id="leftup">Jane Doe</strong><span class="rightup red"><strong>+ N450.00</strong></span>
+            		<br>
+            		<samp id="leftdown">31/07/2018</samp><span id="rightdown">Transfer</span>
+            	</li>
+            	<li class="activitylog">
+            		<strong id="leftup">003 645 6548 65</strong><span class="rightup green"><strong>- 550 SP</strong></span>
+            		<br>
+            		<samp id="leftdown">28/07/2018</samp><span id="rightdown">Data Subcription</span>
+            	</li>
+            </ul>
+        </div>
+	</div>
+	<!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+    <!--Inspired by https://bootstrapious.com -->
+</body>
+</html>
